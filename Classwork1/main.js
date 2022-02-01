@@ -53,7 +53,7 @@ console.log(s);
 let heightC = 10;
 let dC = 4;
 
-let v = Math.PI * Math.pow((dC/2),2) * heightC;
+let v = Math.PI * Math.pow((dC / 2), 2) * heightC;
 console.log(v.toFixed(2));
 
 // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
@@ -65,4 +65,22 @@ let k = Math.sqrt((Math.pow(n, 2) + Math.pow(m, 2)));
 
 console.log(k);
 
+//error
+
+let a = 100;
+let b = 500;
+let c = 'hello';
+let d = 'okten';
+let x = 'constant value';
+{
+    console.log(a);
+    x = 'new value';
+}
+b = 'new value';
+
+let results = 100 + a;
+
+console.log(results);
+
+console.log(b, c, d, x);
 
