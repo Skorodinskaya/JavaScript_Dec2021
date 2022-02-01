@@ -74,13 +74,15 @@ let d = 'okten';
 let x = 'constant value';
 {
     console.log(a);
-    x = 'new value';
+    let x = 'new value';
+    console.log(x);
 }
-b = 'new value';
-
+{
+    let b = 'new value';
+    console.log(b)
+}
 let results = 100 + a;
 
 console.log(results);
-
 console.log(b, c, d, x);
 
