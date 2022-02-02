@@ -1,34 +1,34 @@
 // #1 - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
 //     Вивести кожну змінну за допомогою: console.log , alert, document.write
 
-// let hello = 'hello';
-// let owu = 'owu';
-// let com = 'com';
-// let ua = 'ua';
-// let one = 1;
-// let ten = 10;
-// let minusNum = -999;
-// let oneTwoThree = 123;
-// let pi = 3.14;
-// let twoPointSeven = 2.7;
-// let sixteen = 16;
-// let truth = true;
-// let lie = false;
-//
-// console.log(hello);
-// console.log(owu);
-// console.log(com);
-// console.log(ua);
-// console.log(one);
-// console.log(ten);
-// console.log(minusNum);
-// console.log(oneTwoThree);
-// console.log(pi);
-// console.log(twoPointSeven);
-// console.log(sixteen);
-// console.log(truth);
-// console.log(lie);
-//
+let hello = 'hello';
+let owu = 'owu';
+let com = 'com';
+let ua = 'ua';
+let one = 1;
+let ten = 10;
+let minusNum = -999;
+let oneTwoThree = 123;
+let pi = 3.14;
+let twoPointSeven = 2.7;
+let sixteen = 16;
+let truth = true;
+let lie = false;
+
+console.log(hello);
+console.log(owu);
+console.log(com);
+console.log(ua);
+console.log(one);
+console.log(ten);
+console.log(minusNum);
+console.log(oneTwoThree);
+console.log(pi);
+console.log(twoPointSeven);
+console.log(sixteen);
+console.log(truth);
+console.log(lie);
+
 // document.write(`<div>${hello}</div>`);
 // document.write(`<div>${owu}</div>`);
 // document.write(`<div>${com}</div>`);
@@ -60,20 +60,20 @@
 // #2 - Переприсвоїти кожній змінній з завдання значення на довільне.
 //     Вивести кожну змінну за допомогою: console.log , alert, document.write
 
-// let hello = 'how';
-// let owu = 'are';
-// let com = 'you';
-// let ua = 'developer';
-// let one = 1111;
-// let ten = 1010101;
-// let minusNum = -8;
-// let oneTwoThree = 123123;
-// let pi = 3.141592653;
-// let twoPointSeven = 'two point seven';
-// let sixteen = 61;
-// let truth = 'honest';
-// let lie = 0;
-//
+hello = 'how';
+com = 'you';
+owu = 'are';
+ua = 'developer';
+one = 1111;
+ten = 1010101;
+minusNum = -8;
+oneTwoThree = 123123;
+pi = 3.141592653;
+twoPointSeven = 'two point seven';
+sixteen = 61;
+truth = 'honest';
+lie = 0;
+
 // console.log(hello);
 // console.log(owu);
 // console.log(com);
