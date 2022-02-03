@@ -39,7 +39,7 @@ if (number === 10) {
     console.log('Incorrect')
 }
 
-// (+prompt('Please write a number') === 10) ? console.log('Correct') : console.log('Incorrect')
+(+prompt('Please write a number') === 10) ? console.log('Correct') : console.log('Incorrect')
 
 //     - Ми маємо змінну x в яку користувач задає  значення,  якщо в змінну записане число, вивести 1,
 //     якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 3.
@@ -74,22 +74,66 @@ if (weather >= 10 && weather <= 22) {
 //     числа нам дається приз. (Авто, Мото, Телефон, і т.д ) і якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
 
 let game = +prompt('Please entre the number from 1 to 5');
- switch (game) {
-     case 1:
-         console.log('You won a mobile phone');
-         break;
-     case 2:
-         console.log('You won a flat');
-         break;
-     case 3:
-         console.log('You won a automobile');
-         break;
-     case 4:
-         console.log('You won a bubblegum');
-         break;
-     case 5:
-         console.log('You won a concert ticket');
-         break;
-     default:
-         console.log('The number is incorrect')
- }
+switch (game) {
+    case 1:
+        console.log('You won a mobile phone');
+        break;
+    case 2:
+        console.log('You won a flat');
+        break;
+    case 3:
+        console.log('You won a automobile');
+        break;
+    case 4:
+        console.log('You won a bubblegum');
+        break;
+    case 5:
+        console.log('You won a concert ticket');
+        break;
+    default:
+        console.log('The number is incorrect')
+}
+
+// - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
+// напишіть це тернарним оператором
+
+let num = +prompt('Please write a number');
+
+let result = (num >= -100 && num <=-1) ? 'Negative' : (num === 0) ? 'Zero' : (num >=1 && num <= 100) ? 'Positive' : 'Error';
+alert(result);
+
+// - Перепишіть конструкцію if з використанням умовного оператора '?':
+// let result;
+// if (a + b < 4) {
+//     result = 'Мало';
+// } else {
+//     result = 'Багато';
+// }
+
+let a = +prompt('Please enter the first number');
+let b = +prompt('Please enter the second number');
+(a + b < 4) ? console.log('Little') : console.log('A lot');
+
+// - Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
+//     Знайти, яке з них є середнім (більше одного, але менше за інше). Перевірити, чи знаходиться перше число між двома іншими.
+
+let q = +prompt('Enter the number');
+let w = +prompt('Enter the number');
+let e = +prompt('Enter the number');
+
+if ((w < q && q < e) || (e < q && q < w)) alert(q);
+if ((q < w && w < e) || (e < w && w < q)) alert(w);
+if ((q < e && e < w) || (w < e && e < q)) alert(e);
+
+
+// - Нам дано масив друзів let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"]; Потрібно зробити перевірку якщо
+// кількість елементів у масиві більше або дорівнює 3, то виводиться повідомлення про те, що це великий масив, в якому  3 і більше елементи.
+//     Інакше слід вивести на екран повідомлення про те, що це маленький масив, в якому менше 3-х елементів.
+
+let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
+
+if (friends.length >= 3) {
+    alert('Big array')
+} else {
+    alert('Small array')
+}
