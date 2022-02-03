@@ -82,9 +82,9 @@ switch (agenda) {
 
 // - Потрібно визначити Високосний рік чи ні. Високосні роки діляться націло на 4.
 
-let year = +prompt('Write the number of days of the year')
+let year = +prompt('Write the year')
 
-if (year % 2 === 0) {
+if (year % 4 === 0) {
     console.log(`It's a leap year`);
 } else {
     console.log(`It's not a leap year`);
