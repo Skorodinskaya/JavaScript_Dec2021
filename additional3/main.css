@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrap {
+    width: 20%;
+}
+
+.users-box {
+    width: 40%;
+}
