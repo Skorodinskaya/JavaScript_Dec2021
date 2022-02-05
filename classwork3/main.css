@@ -1,0 +1,47 @@
+.simpson img {
+    width: 200px;
+    height: 350px;
+    border-left: 2px solid black;
+}
+
+.simpson {
+    display: flex;
+    margin: 50px;
+    border: 2px solid black;
+    background-color: gainsboro;
+    width: 1000px;
+}
+
+.simpson_text {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.simpson_content {
+    margin: 20px;
+}
+
+.simpson_content h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.product_card {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 30px;
+}
+
+.product_card img {
+    width: 250px;
+    height: 250px;
+}
+
+.product_title {
+    text-decoration: underline;
+    font-size: 30px;
+}
