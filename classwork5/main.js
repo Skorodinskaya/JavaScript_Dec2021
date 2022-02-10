@@ -114,3 +114,71 @@ const reverse = (arr) => {
 }
 console.log(arrayTest);
 console.log(reverse(arrayTest));
+
+// - Дано натуральное число n. Выведите все числа от 1 до n.
+
+const getNums = (n) => {
+    const newArray = [];
+    for (let i = 1; i <= n; i++) {
+        newArray.push(i)
+    }
+    return newArray;
+}
+console.log(getNums(10));
+
+// - Даны два целых числа A и В . Выведите все числа от A до B включительно, в порядке возрастания, если A < B, или в порядке убывания в противном случае.
+const numsShower = (a, b) => {
+    let newArray = [];
+    if(a < b) {
+        for (let i = a; i <= b; i++) {
+            newArray.push(i)
+        }
+    }
+    if(a > b) {
+        for (let i = a; i >= b; i--) {
+            newArray.push(i)
+        }
+    }
+    return newArray;
+}
+console.log(numsShower(15, 10));
+
+// -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
+//   EXAMPLE:
+//   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
+//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+
+const arrayChanger = (arr, i) => {
+   let variable = arr[i];
+   arr[i] = arr[i+1];
+   arr[i+1] = variable;
+
+
+   return arr;
+}
+const foo = [9,8,0,4];
+console.log(arrayChanger(foo, 0));
+console.log(arrayChanger(foo, 1));
+console.log(arrayChanger(foo, 2));
+
+// - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+//     Двожина масиву від 2 до 100
+// EXAMPLE:
+//     [1,0,6,0,3] => [1,6,3,0,0]
+//     [0,1,2,3,4] => [1,2,3,4,0]
+//     [0,0,1,0]   => [1,0,0,0]
+
+const zeroToTheEnd = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i] === 0) {
+            let x = arr.indexOf(arr[i]);
+            arr.splice(x, 1);
+            arr.push(0)
+        }
+    }
+    return arr;
+}
+console.log(zeroToTheEnd([1, 0, 6, 0, 3]));
+console.log(zeroToTheEnd([0,1,2,3,4]));
+console.log(zeroToTheEnd([0,0,1,0]));
