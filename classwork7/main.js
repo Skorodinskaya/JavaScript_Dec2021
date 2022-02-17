@@ -98,4 +98,44 @@ console.log(secondCar);
 //     За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //     Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
 
+class Cinderella {
+    constructor(name, age, shoeSize) {
+        this.name = name;
+        this.age = age;
+        this.shoeSize = shoeSize;
+    }
+}
 
+const cinderellasArray = [
+    new Cinderella('Anna', 20, 37),
+    new Cinderella('Maria', 23, 36),
+    new Cinderella('Iryna', 30, 35),
+    new Cinderella('Sofia', 12, 37),
+    new Cinderella('Nadia', 40, 38),
+    new Cinderella('Sasha', 29, 38),
+    new Cinderella('Olya', 40, 39),
+    new Cinderella('Alina', 10, 17),
+    new Cinderella('Tania', 20, 39),
+    new Cinderella('Lola', 27, 49),
+];
+console.log(cinderellasArray);
+
+class Prince {
+    constructor(name, age, shoeSize) {
+        this.name = name;
+        this.age = age;
+        this.shoeSize = shoeSize;
+    }
+}
+
+const prince = new Prince('Adrian', 25, 35);
+console.log(prince);
+
+for (const cinderella of cinderellasArray) {
+    if (cinderella.shoeSize === prince.shoeSize) {
+        console.log(`You found your Cinderella. Her name is ${cinderella.name}`)
+    }
+}
+
+const findCinderella = cinderellasArray.find((value) => value.shoeSize === prince.shoeSize);
+console.log(findCinderella);
