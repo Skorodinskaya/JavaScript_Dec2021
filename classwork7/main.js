@@ -168,7 +168,7 @@ console.log(findCinderella);
 // }
 
 class User {
-    constructor(id, name, username, email, street, suite, city, zipcode, lng, lat, phone, website,companyName, catchPhrase, bs) {
+    constructor(id, name, username, email, street, suite, city, zipcode, lng, lat, phone, website, companyName, catchPhrase, bs) {
         this.id = id;
         this.name = name;
         this.username = username;
