@@ -46,24 +46,24 @@ for (const aElement of aElements) {
 }
 
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-const subHeaderElements = document.getElementsByClassName('sub-header');
-for (const subHeaderElement of subHeaderElements) {
-    subHeaderElement.style.backgroundColor = prompt('Enter color, please')
-}
+// const subHeaderElements = document.getElementsByClassName('sub-header');
+// for (const subHeaderElement of subHeaderElements) {
+//     subHeaderElement.style.backgroundColor = prompt('Enter color, please')
+// }
 
 // j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
 
-for (const subHeaderElement of subHeaderElements) {
-    if (subHeaderElement.innerText === 'content 2 segment') {
-        subHeaderElement.style.color = prompt('Enter color of the 2 segment')
-    }
-}
+// for (const subHeaderElement of subHeaderElements) {
+//     if (subHeaderElement.innerText === 'content 2 segment') {
+//         subHeaderElement.style.color = prompt('Enter color of the 2 segment')
+//     }
+// }
 
 // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
-const content_1Elements = document.getElementsByClassName('content_1');
-for (const content1Element of content_1Elements) {
-    content1Element.innerText = prompt('Enter text');
-}
+// const content_1Elements = document.getElementsByClassName('content_1');
+// for (const content1Element of content_1Elements) {
+//     content1Element.innerText = prompt('Enter text');
+// }
 
 // l) отримати елементи p та змінити їм padding на 20px
 const pElements = document.getElementsByTagName('p');
