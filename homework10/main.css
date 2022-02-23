@@ -1,0 +1,22 @@
+.frameworks.hidden ul{
+    display: none;
+}
+.title {
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    position:relative;
+}
+
+.title::before {
+    content: '▶ ';
+    position:absolute;
+    color: blue;
+    top:-2px;
+    left:0;
+}
+
+.frameworks.hidden .title::before {
+    content: '▼ ';
+    top:1px;
+}
