@@ -1,0 +1,28 @@
+#wrapperPosts, #wrapperComments {
+    text-align: center;
+    align-items: center;
+}
+
+.posts, .comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.post, .comment {
+    width: 18%;
+    margin: 5px;
+    text-align: center;
+}
+
+.post {
+    background-color: plum;
+    height: 150px;
+}
+
+.comment {
+    background-color: cornflowerblue;
+    height: 190px;
+}
+
