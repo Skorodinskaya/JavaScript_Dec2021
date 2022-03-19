@@ -1,0 +1,23 @@
+body {
+    background-color: gainsboro;
+}
+.postDetails {
+    background-color: plum;
+    text-align: center;
+}
+
+.comments {
+    justify-content: center;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment {
+    background-color: #b280de;
+    margin: 5px;
+    width: 300px;
+    height: 150px;
+    margin-left: calc(11% - 150px);
+    margin-right: calc(11% - 150px);
+}
